@@ -1,11 +1,12 @@
   
 <div align="center">
+
+  <img width="204" alt="Avocado Harvesters" src="https://github.com/user-attachments/assets/f7266384-8198-4a4f-8821-dc88f592969c" />
+
   <h1><b>** Avocado Harvesters **</b></h1>  
 <h2>Using Machine Learning to   
 Predict Avocado Sales</h2>
   <p>3-19-2025<p></div>
-
-![][image1]
 
 # 📖 **Project Overview & Objectives**
 
@@ -31,7 +32,7 @@ This project utilizes advanced machine learning techniques to forecast avocado m
 * Performance evaluation utilized standard regression metrics including RMSE and R² values  
 * Comparative analysis revealed both consistent patterns and model-specific insights   
   (detailed in conclusions)  
-* Kristin provided supplementary price elasticity of demand calculations for  additional market intelligence 
+* Kristin provided supplementary price elasticity of demand calculations for additional market intelligence 
 
 **Data Processing Methodology**
 
@@ -59,23 +60,24 @@ Our data preparation strategy emphasized rigorous preprocessing to ensure reliab
 
 Kristin’s Box Plot of Avocado sales volume per year:
 
-![][image2]
+<img width="889" alt="Kristin Box Plot" src="https://github.com/user-attachments/assets/b1b756ee-4d46-478f-96a3-7d9e56c7f150" />
 
 Raymond’s Boxplot of Average Price vs. City (Region Name):
 
-![][image3]
+<img width="806" alt="Raymond Box Plot 1" src="https://github.com/user-attachments/assets/105adb42-f642-4940-8768-a1ad30dc57de" />
 
 Raymond also created a box plot to analyze the distribution of Average Avocado Price by Season.  In this plot we can see Fall has the highest median price, and Winter has a lower median price when compared to Fall and Summer.  The price distributions of Spring and Summer look the same with more outliers in the Fall and Spring. 
 
-![][image4]
+<img width="809" alt="Raymond Box Plot 2" src="https://github.com/user-attachments/assets/4083f6f5-d9d1-42b5-a5ca-d34522f10a24" />
+
 
 **Heatmaps:**
 
 Kristin chose to do a correlation heatmap comparing Avocado Prices by Season, and found that the price of Avocados in Spring and Summer have the highest correlation (0.93), meaning that prices tend to move similarly within the seasons.  There is also a high correlation between the prices in Fall and Spring (.81). Fall and Winter seasons have a negative correlation (-0.50), so prices move in opposite directions. Winter does not have a strong correlation to any season overall, which means that Winter prices tend to behave differently and follow a different pattern than in any other season.
 
-![][image5]
+<img width="639" alt="KP Heatmap" src="https://github.com/user-attachments/assets/1c4b483d-489b-4fe0-8b19-082047e6f5ee" />
 
-Bringing the two different approaches together, we can see that each chart is pointing to the same key takeaways: if prices are high in Fall, they will likely also be high in Spring and Summer. Fall prices tend to be highest, and Winter prices tend to move in a different pattern (low correlation, and different median in the box plot)
+Bringing the two different approaches together, we can see that each chart is pointing to the same key takeaways: if prices are high in Fall, they will likely also be high in Spring and Summer. Fall prices tend to be highest, and Winter prices tend to move in a different pattern (low correlation, and different median in the box plot).
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -91,9 +93,7 @@ The model's performance metrics reveal its limitations: an R² of 0.2644 indicat
 
 A key issue is the model's inability to accurately predict higher price points, as evidenced by the systematic underprediction at the upper range (the gap between actual data points and the prediction line at higher values). 
 
- 
-
-![][image6]
+ <img width="824" alt="Raymond model 1" src="https://github.com/user-attachments/assets/f54a31c9-e2e1-4712-83d3-3787fab259ad" />
 
 ***Linear Regression Calculation Results:***  
 *Mean Squared Error: 0.1251*  
@@ -105,7 +105,7 @@ From these values you can see that Raymond’s model can be improved upon as the
 
 Kristin approached the analysis slightly differently, focusing only on Total Large Avocado Sales. 
 
-![][image7]
+<img width="660" alt="Kristin Linear Regression Model1" src="https://github.com/user-attachments/assets/1108a766-b58f-453a-8e69-d19896092a29" />
 
 *Mean Squared Error: 170549560405.2831*  
 *R-squared Score: 0.9192*
@@ -114,25 +114,27 @@ You can see that Kristin’s model visually follows a 45\* angled line, and has 
 
 Kristin then decided to experiment with the model by splitting the data before testing and training it.  She again used Linear Regression, but split her dataset into training data (full years 2015, 2016, and 2017\) and testing data (2018, partial data set through 3/31/18 only).  Using this approach yielded a slightly less accurate R-squared score (0.89).  This model would struggle even more with accurately forecasting higher volume Large Avocado sales.
 
-![][image8]
+<img width="696" alt="Kristin Linear Regression Model 1 w: split" src="https://github.com/user-attachments/assets/f6cd502d-1ef5-4da5-84ac-8bcbfccd9697" />
 
 *Mean Squared Error: 276894562322.6763*  
 *R-squared Score: 0.8992*
 
 What we learned from comparing Kristin’s and Raymond’s approaches is having more datapoints in the dataset does always equal a more accurate model.  
 
-Kristin also an additional machine learning model to compare model accuracy:
+Kristin also ran an additional machine learning model to compare model accuracy:
 
 **Model 1A: Random Forest Regression Graphs**
 
 Taking the standard approach to the Random Forest Regression model(test and train on full dataset), generated an R-squared score of 0.88.  This model is less accurate than the Linear Regression model, but the general pattern of the scatterplot still follows the 45\* line.  This model will also have issues predicting higher volumes with accuracy. 
 
-![][image9]*Mean Squared Error: 241597325561.9456*  
+<img width="682" alt="Kristin Random Forest Model" src="https://github.com/user-attachments/assets/fb55e2d2-61a6-40da-b2d3-ba679e2e1936" />
+
+*Mean Squared Error: 241597325561.9456*  
 *R-squared Score: 0.8855*
 
 When using Random Forest Regression combined with the split data approach (train on full years 2015-17, test on partial year 2018), the results continue to deteriorate due to the very small amount of data available in the test dataset.  You can see below that while the shape of this scatterplot is vaguely up and to the right, the R-squared score is less than the prior models (0.87).
 
-![][image10]
+<img width="699" alt="Kristin Random Forest w: split" src="https://github.com/user-attachments/assets/4567cad2-e3b6-4b16-9e2e-b02843dca231" />
 
 *Mean Squared Error: 350487682901.1068*  
 *R-squared Score: 0.8724*
@@ -145,7 +147,7 @@ Both Raymond and Kristin utilized Facebook Prophet to forecast future Avocado Sa
 
 Raymond decided to do some additional work on his dataset, and used OneHotEncoder to break out each of the cities.  This resulted in a 10x increase in columns, basically multiplying each datapoint by 10\.  The impact to his Facebook Prophet model is that the model itself had to run through 10x more data points (so took upwards of 10 minutes to run each time), and still had a very low accuracy forecast.  
 
-**![][image11]**
+<img width="652" alt="Raymond Prophet Forecast" src="https://github.com/user-attachments/assets/71127a0e-6d62-4799-92cc-d82b6f41d3d2" />
 
 *Mean Squared Error: 0.1854*  
 *Root of the Mean Squared Error: 0.4306*  
@@ -156,17 +158,17 @@ You can see in Raymond’s visualization, not only are there a LOT of data point
 
 Kristin decided to forecast Small Avocado sales volume for the remainder of 2018, as full year data was missing from the dataset.  On Kristin’s forecast model, you can see that the variance intervals are much tighter, and the volume never goes below zero.  The sales volume pattern roughly follows a similar seasonality pattern for earlier years.  There are several outliers present in the graph, but the forecast model is much more accurate.
 
- 
-
- ![][image12]
+ <img width="647" alt="Kristin Prophet Forecast" src="https://github.com/user-attachments/assets/a8795868-e7e4-4f4f-b724-ca3abcf608e1" />
 
 Kristin also ran several over analyses (analyzing & forecasting organic vs. conventional avocado volumes, etc.) but because the number of organic avocados was such a small portion of the dataset, the results were not really meaningful. 
 
-![][image13]
+<img width="645" alt="Kristin Comp Conventional vs Organic" src="https://github.com/user-attachments/assets/b0a08bbe-2586-4379-9f20-36f8f46dd005" />
 
-![][image14]
+<img width="664" alt="Kristin " src="https://github.com/user-attachments/assets/55777365-0c20-4cc0-921c-e798459742d1" />
 
-Whoops\!  This model will need to be reviewed and revised. 
+![image](https://github.com/user-attachments/assets/ec958fe9-1403-495b-ab01-111047b51249)
+
+Well...obviously these models needs some work! 
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -180,11 +182,11 @@ The resulting elasticity was \-4.69.  This means that a 1% increase in price res
 
 In the chart below, you can see this negative relationship in the red line going down to the right…as the price increases, the volume of avocados goes down. 
 
-![][image15]
+<img width="616" alt="Price Elasticity model - kp" src="https://github.com/user-attachments/assets/25d637b7-6309-4d95-8952-b4802fb1e0ca" />
 
 The final piece of analysis that Kristin did for this project was to compare price elasticity between 2 years…in the dataset we noted that 2017 not only had higher volumes of avocados sold, but there were more avocados sold at higher price points than in 2015\.  Comparing the price elasticity of demands for both years, you can see on the chart below that in 2016, the market was very price sensitive to avocados. (elasticity of \-6.70, and the x-axis tops out at just about $1.00). However, in 2017, the market was not only willing to pay more but also to buy more avocados at a higher price elasticity of \-3.57, and the x-axis goes to $1.25).  2017 marked the height of the Avocado Toast Millennial trend, and this bears out in the data.
 
- ![][image16]
+<img width="609" alt="Comparing 2015_ 2017 Elasticities" src="https://github.com/user-attachments/assets/aac3244c-ba00-47f7-9fa0-67dc041f4820" />
 
 **Ideas for Further Investigation**
 
