@@ -1,8 +1,9 @@
   
-**Avocado Harvesters**   
-Using Machine Learning to   
-Predict Avocado Sales   
-3-19-2025
+<div align="center">
+  <h1><b>** Avocado Harvesters **</b></h1>  
+<h2>Using Machine Learning to   
+Predict Avocado Sales</h2>
+  <p>3-19-2025<p></div>
 
 ![][image1]
 
