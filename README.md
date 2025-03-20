@@ -3,7 +3,7 @@
 
   <img width="204" alt="Avocado Harvesters" src="https://github.com/user-attachments/assets/f7266384-8198-4a4f-8821-dc88f592969c" />
 
-  <h1><b>** Avocado Harvesters **</b></h1>  
+  <h1><b>Avocado Harvesters</b></h1>  
 <h2>Using Machine Learning to   
 Predict Avocado Sales</h2>
   <p>3-19-2025<p></div>
@@ -189,30 +189,22 @@ The final piece of analysis that Kristin did for this project was to compare pri
 <img width="609" alt="Comparing 2015_ 2017 Elasticities" src="https://github.com/user-attachments/assets/aac3244c-ba00-47f7-9fa0-67dc041f4820" />
 
 **Ideas for Further Investigation**
-
 - Investigate Organic vs Conventional Avocado pricing patterns & correlations by season  
 - Find a way to predict Organic Avocado sales, and dig into whether Organic Avocado sales were responsible for more overall Avocado sales in 2017  
-- Review and revise feature selection and regularization techniques   
+- Review and revise feature selection and regularization techniques
+- Use Synthetic data to fill the gap of XL avocados
+- Build Seasonal models where seasons can be correlated by year   
 - Run the same analysis on the full 2015-2025 dataset (which we found was available only after completing this project)
 
 **Dependencies**
-
 import pandas as pd
-
 import matplotlib.pyplot as plt
-
 import seaborn as sns
-
 import numpy as np
-
 from sklearn.metrics import mean\_squared\_error, r2\_score
-
 from sklearn.model\_selection import train\_test\_split
-
 from sklearn.metrics import accuracy\_score
-
 from sklearn.metrics import mean\_squared\_error, mean\_absolute\_error, r2\_score
-
 from sklearn.preprocessing import OneHotEncoder  
 from sklearn.linear\_model import LogisticRegression  
 from sklearn.svm import SVC  
@@ -223,11 +215,12 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.linear\_model import LinearRegression  
 from prophet import Prophet
 
-**Location**:  GitHub repository: *URL*
+**Location**:  GitHub repository: [*URL*](https://github.com/k23p/Project-2_Avo-Project)
 
 🌟 Acknowledgments
 
-* Thank you to avocados for being so delicious, and to the Haas Avocado Board for making this interesting data freely available.  
+* Thank you to avocados for being so delicious
+* Thank you to the Haas Avocado Board for making this interesting data freely available
 * Thank you to our instructors in the AI & Machine Learning Bootcamp  
 * Thank you to Kaggle for being a great source of data for students learning to code\!
 
